@@ -1,0 +1,46 @@
+footer{
+  padding: 105px 0 160px;
+  background-color: #2a2d2e;
+  text-align: center;
+}
+.f_LOGO{
+  width: 130px;
+  height: 37.5px;
+  margin:0 auto 40px;
+
+}
+.f_LOGO>img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.f_top{
+  color: rgba(170,171,171,0.5);
+  font-size: 0.75rem;
+  line-height: 1.667em;
+  font-weight: 300;
+  margin-bottom: 35px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.f_middle{
+  color: rgba(170,171,171,0.5);
+  font-size: 0.75rem;
+  line-height: 1.714em;
+  margin-bottom: 35px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.f_bottom h4{
+  color: #aaabab;
+  font-size: 0.8rem;
+  margin: 0 10px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.f_bottom h4 span{
+  margin-right: 10px;
+  margin-left: 20px;
+  font-size: 0.875rem;
+}

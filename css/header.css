@@ -1,0 +1,188 @@
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+
+.w100{
+  width: 100%;
+  padding: 0 70px;
+  box-sizing: border-box;
+}
+
+#mobile_nav{
+  display: none;
+}
+
+#mobile_nav span{
+  display: block;
+  width: 25px; height: 2px;
+  background-color: #111;
+}
+#mobile_nav span:nth-child(2){
+  margin: 5px 0;
+}
+
+
+.header_inr{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  box-sizing: border-box;
+  height: 100px;
+}
+
+/*LOGO*/
+.header_inr>h1>a{
+  display: block;
+  width: 173px; height: 50px;
+  background: url(../img/LOGO.png) no-repeat center;
+  text-indent: -9999px;
+}
+
+/*네비게이션 바*/
+#gnb{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lnb  {
+  top: 90px;
+  position: absolute;
+  display: none;
+  height: 0;
+  overflow: hidden;
+}
+
+#gnb_bg{
+  background-color: #fff;
+  border-top: 1px solid #e6e6e6;
+  position: absolute;
+  top: 100px; left: 0; 
+  width: 100%; height: 190px;
+  height: 0;
+  transition: height 0.3s;
+}
+/* #gnb:hover> #gnb_bg{
+  height: 190px;
+} */
+#gnb:hover .lnb{
+  display: block;
+}
+
+.lnb>li>a{
+  display: block;
+  font-size: 12px;
+  color: #777777;
+  padding-top: 10px;
+  transition:height 0.3s;
+}
+
+#gnb>li{
+  margin: 0 10px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#gnb>li>a{
+  color: #181c1c;
+  font-size: 1.063rem;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*headerICON*/
+.tel{
+  background-image: url(../img/tel.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  color: #181c1c;
+}
+.call_txt{
+  margin-left: 15px;
+  font-size: 1.25rem;
+  display: inline-block;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.header_icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.header_icon>a{
+  display: inline-block;
+  background-image: url(../img/insta-wh.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 35px; 
+  height: 35px;
+  text-indent: -9999px;
+  background-color: #181c1c;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+@media(max-width:1500px){
+  #gnb>li{
+    padding: 0 15px;
+    margin: 0;
+  }
+}
+
+@media(max-width:1160px){
+  #gnb{
+    display: none;
+  }
+  .tel{
+    background-position: right center;
+  }
+  #mobile_nav{
+    display: block;
+    position: relative;top: 40px;
+    padding-left: 40px;
+  }
+  .call_txt{
+    text-indent: -9999px;
+  }
+  .header_icon{
+    display: flex;
+    justify-content: center;
+  }
+  .header_icon>a{
+    background-image: url(../img/insta-bl.png);
+    background-color: transparent ;
+    }
+    .header_inr{
+      top: 0;
+      width: 60%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      right: 0;
+      padding: 0 40px 0 0;
+
+    }
+    .header_inr>h1>a{
+      width: 125px; height: 35px;
+      background-size: cover;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+    
